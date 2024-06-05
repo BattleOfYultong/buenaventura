@@ -1,0 +1,150 @@
+
+@keyframes exitAnim {
+	0% {
+		transform: scaleX(1);
+	}
+
+	100% {
+		transform: scaleX(0);
+	}
+}
+
+@keyframes entranceAnim {
+	0% {
+		transform: scaleX(0);
+	}
+
+	100% {
+		transform: scaleX(1);
+	}
+}
+
+
+body {
+    display: flex;
+    justify-content: space-around;
+}
+
+form {
+    border: 2px solid white;
+    width: 45%;
+    height: 650px;
+    border-radius: 20px;
+    padding-top: 50px;
+    font-size: 1.5rem;
+}
+
+input[type="text"], [type="password"] {
+    margin: 15px;
+    height: 50px;
+    width: 85%;
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid #066277;
+    outline: none;
+    font-size: 1.5rem;
+    text-align: center;
+}
+
+input[type="submit"] {
+    height: 50px;
+    width: 45%;
+    background-color: transparent;
+    outline: none;
+    font-size: 1.5rem;
+    border: 3px solid #066277;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color .3s;
+    font-weight: bold;    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #074c5c;
+}
+
+button {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 25px;
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+form button:hover {
+    color: #b40808;
+}
+
+.error {
+    color: red;
+}
+
+.passField {
+    position: relative;
+  }
+
+.eye-icon {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    height: 35px;
+  }
+
+.signup {
+    width: 75%;
+    padding: 0;
+}
+
+.signup h1 {
+    padding-top: 0;
+}
+
+.signup-flex-container  {
+    display: flex;
+    justify-content: space-around;
+}
+
+.signup input[type="text"], [type="password"] {
+    margin: 15px;
+    height: 50px;
+    width: 450px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 4px solid #066277;
+    outline: none;
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+.image-preview-box {
+    height: 250px;
+    width: 250px;
+    border-radius: 16px;
+    border: 3px solid white;
+    position: relative;
+    top: 35%;
+    left: 15%;
+    transform: translate(-25%,-25%);
+    background-size: cover;
+    background-position: center;
+}
+
+.image-upload-button {
+    position: relative;
+    top: 12%;
+    left: 31%;
+    background-color: #00B388;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 50%;
+}
+.image-upload-button img {
+    background-color: #00B388;
+    padding-top: 10px;
+    height: 50px;
+    padding: 10px 10px 10px 10px;
+    border-radius: 5px;
+}
